@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mazur Inc&reg;</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="theme-color" content="#5e42b0">
+	<meta name="msaplication-navbutton-color" content="#5e42b0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="icon" sizes="192x192" href="img/md.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/animations-ie-fix.css">
+	<!-- <link rel="stylesheet" href="css/gallery.css"> -->
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/circle-svg-animation.css">
+	<link rel="stylesheet" href="css/formy.css">
+	<link rel="stylesheet" href="css/gallery-for-mobile.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="navbar col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg">
+			<button class="hamburger hamburger--elastic">
+			<span class="hamburger-box">
+  		  <span class="hamburger-inner"></span>
+  		</span>
+  		</button>
+				<ul class="navbar__ul">
+					<li class="navbar__li col-md-2"><a href="javascript://0" class="navbar__a">About Me</a></li>
+					<li class="navbar__li col-md-2"><a href="javascript://0" class="navbar__a">My Works</a></li>
+					<li class="navbar__li col-md-2"><a href="javascript://0" class="navbar__a">Skills</a></li>
+					<li class="navbar__li col-md-2"><a href="javascript://0" class="navbar__a">Feedback</a></li>
+					<li class="navbar__li col-md-2"><a href="javascript://0" class="navbar__a">Contact</a></li>
+				</ul>
+			</div>
+			<div class="name col-xs-12 center-xs col-md-12 center-md col-lg-12 center-lg animatedParent animateOnce">
+				<h1 class="name__h1">Dmitry Mazur</h1>
+				<span class="name__span animated bounceInDown">psd2html</span>
+			</div>
+			<div class="jobs col-xs-12 center-xs col-md-12 center-md  col-lg-12 center-lg">
+				<div class="jobs__quote col-xs-12 center-xs col-md-6 start-md">
+					<span class="quote__span">"We made the buttons on the screen look so good you'll want to lick them."</span>
+					<span class="quote__span quote__span_steve">&copy;Steve Jobs</span>
+				</div>
+				<img src="img/jobs.png" alt="" class="img__jobs col-xs-12 center-xs col-md-6 end-md" title="Steve Jobs">
+			</div>
+		</div>
+
+		<div class="row about-me" id="about-me" >
+			<div class="me__info col-xs-12 center-xs animatedParent animateOnce" data-sequence="400">
+			<h2 class="info__h2">About Me</h2>
+			<img src="img/me.jpg" alt="" title="Mazur Dmitriy" data-id="1" class="info__img animated fadeInLeftShort col-xs-12 center-xs col-md-6 start-md">
+			<p class="info__p animated fadeInRightShort col-xs-12 center-xs col-md-6 start-md" data-id="2">Hello, my name is Dmitry. I'm 19 years old now. I was born in Dnipro, Ukraine. I'm a junior psd to html converter. I really want to be front-end developer in the future, and therfore, I learn JavaScript now.<br>
+			I like to do goodly and intersting things in my work. Girls say that I am clever and easygoing person(NO).
+			Usually, creative and sense of beaty gone with me, but sometimes they gone away and don't tell with me. I can say many beatiful words about me, but it will haven't meaning whitout my works(you'll see it below) and I don't know what to write else.<br>
+			I will be glad to help you.<br>
+			Thank you for reading to the end.
+			<input type="color" class="colorChange" name="main-back" value="#5e42b0">
+			</p>
+			</div>
+		</div>
+
+
+		<div class="my-works row" id="myWorks">
+		<h2 class="works__h2 col-xs-12 center-xs">My Works</h2>
+		<div class="works__my_block col-xs-12">
+			<div class="works__my">
+				<img src="img/screen/screen0.jpg" alt="Intersting" class="my__img">
+				<img src="img/screen/screen1.jpg" alt="clss" class="my__img">
+				<img src="img/screen/screen2.jpg" alt="qwew" class="my__img">
+				<img src="img/screen/screen3.jpg" alt="dfsfs" class="my__img">
+				<img src="img/screen/screen4.jpg" alt="bcx" class="my__img">
+				<img src="img/screen/screen5.jpg" alt="sdfsfsa" class="my__img">
+			</div>
+			</div>
+			<button type="button" class="works__add">Show more</button>
+			<div id="my__modal" class="my__modal">
+				<span class="close" id="close">&times;</span>
+				<div class="modal__block" id="modal__block">
+					<img id="img01" class="modal__content" alt="">
+					<div id="caption"></div>
+				<button class="prev" id="prev">&#10094</button>
+				<button class="next" id="next">&#10095</button>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="skills row" id="skills">
+			<div class="skills__graph col-xs-12">
+			<h2 class="skills__h2">Skills</h2>
+			<div class="skills__box row">
+
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">Html</h4>
+				<div class="circle-box graph__prog" data-percent="85" data-time="1000"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">css</h4>
+				<div class="circle-box graph__prog" data-percent="78" data-time="2000"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">javascript</h4>
+				<div class="circle-box graph__prog" data-percent="49" data-time="3000"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">responsive</h4>
+				<div class="circle-box graph__prog" data-percent="61" data-time="3200"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">adaptive</h4>
+				<div class="circle-box graph__prog" data-percent="45" data-time="3400"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">jquery</h4>
+				<div class="circle-box graph__prog" data-percent="30" data-time="3600"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">cms</h4>
+				<div class="circle-box graph__prog" data-percent="9" data-time="4000"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">Wordpress</h4>
+				<div class="circle-box graph__prog" data-percent="15" data-time="4300"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">photoshop</h4>
+				<div class="circle-box graph__prog" data-percent="22" data-time="4600"></div>
+			</div>
+			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
+				<h4 class="graph__title">svg</h4>
+				<div class="circle-box graph__prog" data-percent="2" data-time="4700"></div>
+			</div>
+			</div>
+			</div>
+		</div>
+
+	<div class="feedback row" id="feedback">
+			<div class="feedback__data col-xs-12 center-xs">
+			<h2 class="feedback__h2">Feedback</h2>
+			</div>
+			<form id="formy" class="feedback__form col-xs-11 col-md-7 col-lg-6" name="formy" method="POST" action="https://formspree.io/rated_demon@ukr.net">
+        <div id="result"></div>
+        <!--Name field-->
+        <div class="input-field">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19.79"><title>Name</title><path class="a" d="M7.72,2.15A3.13,3.13,0,0,0,6.49,4.74c0.06,0.78.22,1.79,0.22,1.79a0.92,0.92,0,0,0-.31.85c0.11,1.72.68,1,.8,1.73,0.28,1.81.93,1.49,0.93,2.48,0,1.65-.68,2.42-2.8,3.33S1,17,1,19v1H19V19c0-2-2.2-3.15-4.33-4.07s-2.8-1.68-2.8-3.33c0-1,.65-0.67.93-2.48,0.12-.75.69,0,0.8-1.73a0.92,0.92,0,0,0-.31-0.85s0.16-1,.22-1.79a3.09,3.09,0,0,0-2.3-3.1c-0.33-.34-0.56-0.88.47-1.42C9.44,0.11,8.92,1.28,7.72,2.15Z" transform="translate(-1 -0.21)"/></svg>
+            </i>
+            <input type="text" name="name" id="name" maxlength="60" data-validate required/>
+            <label for="name">Name</label>
+            <div class="lenghtCounter"><span></span></div>
+        </div>
+        <!--Email field-->
+        <div class="input-field">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12"><title>Email</title><path class="a" d="M1.57,5.29l7.5,4a2.16,2.16,0,0,0,1.81,0l7.5-4C18.88,5,19.34,4,18.44,4H1.52C0.62,4,1.09,5,1.57,5.29Zm17,2.2-7.73,4a1.7,1.7,0,0,1-.91.2,1.7,1.7,0,0,1-.91-0.2l-7.69-4C1,7.28,1,7.52,1,7.71V15a1.22,1.22,0,0,0,1,1H18a1.22,1.22,0,0,0,1-1V7.71C19,7.52,19,7.28,18.61,7.49Z" transform="translate(-1 -4)"/></svg>
+            </i>
+            <input type="email" name="email" id="email" maxlength="60" required/>
+            <label for="email">Email</label>
+            <div class="lenghtCounter"><span></span></div>
+        </div>
+        <!--Phone field-->
+        <div class="input-field">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16"><title>Phone</title><path class="a" d="M11.23,11.23c-1.58,1.58-3.42,3.1-4.14,2.37-1-1-1.68-1.94-4-.1s-0.53,3.06.47,4.07c1.16,1.16,5.48.06,9.76-4.21s5.37-8.6,4.21-9.76c-1-1-2.23-2.76-4.06-.47s-0.94,2.93.1,4C14.32,7.81,12.81,9.65,11.23,11.23Z" transform="translate(-2 -2)"/></svg>
+            </i>
+            <input type="tel" name="phone" id="phone" maxlength="18" required/>
+            <label for="phone">Phone</label>
+            <div class="lenghtCounter"><span></span></div>
+        </div>
+        <!--Message field-->
+        <div class="input-field">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18"><title>Message</title><path class="a" d="M5.8,12.2V6H2A2,2,0,0,0,0,8v6a2,2,0,0,0,2,2H3v3l3-3h5a2,2,0,0,0,2-2V12.18l-0.2,0h-7ZM18,1H9A2,2,0,0,0,7,3v8h7l3,3V11h1a2,2,0,0,0,2-2V3A2,2,0,0,0,18,1Z" transform="translate(0 -1)"/></svg>
+            </i>
+            <textarea name="message" id="message"></textarea>
+            <label for="message">Your message</label>
+        </div>
+        <!--Submit button-->
+        <button type="submit" class="submit">
+            Submit
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.2 17.6"><title>Submit</title><path class="a" d="M11.93,13.07S19,8,18.21,2.15a0.46,0.46,0,0,0-.11-0.27,0.44,0.44,0,0,0-.26-0.12C12.14,1,7.16,8.18,7.16,8.18c-4.32-.52-4,0.34-6,5.08-0.38.9,0.23,1.21,0.9,1l2.15-.81,2.59,2.65L6,18.25c-0.25.69,0.05,1.31,0.94,0.93C11.6,17.17,12.44,17.49,11.93,13.07Zm1-5.92a1.59,1.59,0,0,1,0-2.22,1.51,1.51,0,0,1,2.17,0,1.59,1.59,0,0,1,0,2.22A1.51,1.51,0,0,1,12.94,7.15Z" transform="translate(-1.07 -1.7)"/></svg>
+        </button>
+    </form>
+
+
+		</div>
+
+		<div class="contacts row" id="contacts">
+			<div class="contacts__links col-xs-12 center-xs">
+				<h2 class="contacts__h2">Contacts</h2>
+				<div class="contacts__author col-xs-12 center-xs">
+
+				<span class="author__p col-xs-12 center-xs col-md-6">WhatsApp/Viber:<br>+8(066)3853594</span>
+				<span class="author__p col-xs-12 center-xs col-md-6">E-mail:<br>rated_demon@ukr.com</span>
+			</div>
+			<div class="my__contacts row">
+			<div class="contacts__social col-xs-12 col-md-12 col-lg-6 end-lg">
+					<div class="sprite__img sprite__img1 spriteBig spriteLarge"><a href="https://www.linkedin.com/in/dmitry-mazur-92a78912b" target="_blank"></a></div>
+					<div class="sprite__img sprite__img2 spriteBig spriteLarge"><a href="https://www.facebook.com/dima.mazur.39" target="_blank"></a></div>
+					<div class="sprite__img sprite__img3 imgNoBig spriteBig"><a href="https://twitter.com/DemonRated" target="_blank"></a></div>
+			</div>	
+			<div class="contacts__social col-xs-12 col-md-12 col-lg-6 start-lg">
+					<div class="sprite__img sprite__img3 spriteNoBig spriteLarge onlyNoLarge"><a href="https://twitter.com/DemonRated" target="_blank"></a></div>
+					<div class="sprite__img sprite__img4 spriteBig spriteLarge"><a href="https://vk.com/rated_demon" target="_blank"></a></div>
+					<div class="sprite__img sprite__img5 imgNoBig spriteBig"><a href="https://www.instagram.com/rated_demon/" target="_blank"></a></div>
+					<div class="sprite__img sprite__img6 imgNoBig spriteBig"><a href="https://www.youtube.com/" target="_blank"></a></div>
+			</div>
+			<div class="contacts__social col-xs-12 col-md-12">
+					<div class="sprite__img sprite__img5 spriteNoBig spriteLarge onlyNoLarge"><a href="https://www.instagram.com/rated_demon/" target="_blank"></a></div>
+					<div class="sprite__img sprite__img6 spriteNoBig spriteLarge onlyNoLarge"><a href="https://www.youtube.com/" target="_blank"></a></div>
+			</div></div>
+		</div>
+		</div>
+	</div>
+<script src="js/scroll.js"></script>
+<script src="js/css3-animate-it.js"></script>
+<script src="js/gallery-for-mobile.js"></script>
+<!-- <script src="js/images.js"></script> -->
+<script src="js/hamburger.js"></script>
+<script src="js/circle-svg-animation.js"></script>
+<script src="js/formy.min.js"></script>
+</body>
+</html>

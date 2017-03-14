@@ -1,0 +1,21 @@
+.works__my_block{
+	width: 100%;
+}
+.works__my{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	transform: translateX(0%);
+	transition: all .2s ease;
+	/*width: 100vw;*/
+}
+.my__img{
+	width: 100vw;
+	/*display: inline-block;*/
+	margin: 2% auto;
+}
+.my__modal, .works__add{
+	display: none;
+}
