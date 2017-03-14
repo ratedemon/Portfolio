@@ -15,16 +15,21 @@
 	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/animations-ie-fix.css">
-	<link rel="stylesheet" href="css/gallery.css">
 	<link rel="stylesheet" href="css/hamburgers.min.css">
 	<link rel="stylesheet" href="css/circle-svg-animation.css">
 	<link rel="stylesheet" href="css/formy.css">
-	<!-- <link rel="stylesheet" href="css/gallery-for-mobile.css"> -->
+	<link rel="stylesheet" href="css/gallery.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+	<script src="http://hammerjs.github.io/dist/hammer.min.js" defer></script>
+	<script src="js/css3-animate-it.js" defer></script>
+	<script src="js/gallery.js" defer></script>
+	<script src="js/circle-svg-animation.js" defer></script>
+	<script src="js/formy.min.js" defer></script>
+	<script src="js/hamburger.js" defer></script>
+	<script src="js/scroll.js" defer></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -57,7 +62,7 @@
 		</div>
 
 		<div class="row about-me" id="about-me" >
-			<div class="me__info col-xs-12 center-xs animatedParent animateOnce" data-sequence="400">
+			<div class="me__info col-xs-12 center-xs animatedParent animateOnce" data-sequence="400" data-appear-top-offset='-200'>
 			<h2 class="info__h2">About Me</h2>
 			<img src="img/me.jpg" alt="" title="Mazur Dmitriy" data-id="1" class="info__img animated fadeInLeftShort col-xs-12 center-xs col-md-6 start-md">
 			<p class="info__p animated fadeInRightShort col-xs-12 center-xs col-md-6 start-md" data-id="2">Hello, my name is Dmitry. I'm 19 years old now. I was born in Dnipro, Ukraine. I'm a junior psd to html converter. I really want to be front-end developer in the future, and therfore, I learn JavaScript now.<br>
@@ -81,12 +86,6 @@
 				<div class="works__pic"><img src="img/screen/screen3.jpg" alt="" class="my__img"></div>
 				<div class="works__pic"><img src="img/screen/screen4.jpg" alt="" class="my__img"></div>
 				<div class="works__pic"><img src="img/screen/screen5.jpg" alt="" class="my__img"></div>
-				<!-- <img src="img/screen/screen0.jpg" alt="Intersting" class="my__img">
-				<img src="img/screen/screen1.jpg" alt="clss" class="my__img">
-				<img src="img/screen/screen2.jpg" alt="qwew" class="my__img">
-				<img src="img/screen/screen3.jpg" alt="dfsfs" class="my__img">
-				<img src="img/screen/screen4.jpg" alt="bcx" class="my__img">
-				<img src="img/screen/screen5.jpg" alt="sdfsfsa" class="my__img"> -->
 			</div>
 			</div>
 			<div class="works__page col-xs-12 center-xs"></div>
@@ -107,7 +106,6 @@
 			<div class="skills__graph col-xs-12">
 			<h2 class="skills__h2">Skills</h2>
 			<div class="skills__box row">
-
 			<div class="skills__qraph col-xs-6 center-xs col-md-4 center-md col-lg-3 center-lg">
 				<h4 class="graph__title">Html</h4>
 				<div class="circle-box graph__prog" data-percent="85" data-time="1000"></div>
@@ -230,14 +228,5 @@
 		</div>
 		</div>
 	</div>
-<script src="js/scroll.js"></script>
-<script src="js/css3-animate-it.js"></script>
-<!-- <script src="js/gallery-for-mobile.js"></script> -->
-<script src="js/images.js"></script>
-<script src="js/hamburger.js"></script>
-<script src="js/circle-svg-animation.js"></script>
-<script src="js/formy.min.js"></script>
-<!-- <script src="js/hammer.min.js"></script> -->
-<script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
 </body>
 </html>

@@ -1,7 +1,61 @@
-*{
+:root{
+	--main-back: #5e42b0;
+	--main-color: white;
+	--spacing: 1%;
+}
+/**{
 	margin: 0;
 	padding: 0;
+}*/
+@media only screen and (max-width: 48em){
+.works__my_block{
+	width: 100%;
+	overflow: hidden;
 }
+.works__my{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	transform: translateX(0%);
+	transition: all .2s ease;
+	/*width: 100vw;*/
+}
+.works__pic{
+	width: 100%;
+}
+.my__img{
+	width: 100vw;
+	display: block;
+	margin: 0;
+}
+.works__page{
+	padding: 5% 0;
+}
+.page__span{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: var(--main-color);
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 1%;
+	cursor: pointer;
+	border: 1px solid var(--main-back);
+	transition: all .4s ease;
+}
+.page__span_active{
+	border: 1px solid var(--main-back);
+	background: var(--main-back);
+}
+.my__modal, .works__add{
+	display: none;
+}
+
+}
+
+@media only screen and (min-width: 48em){
 .works__my{
 	display: flex;
 	flex-direction: row;
@@ -11,9 +65,18 @@
 	align-content: center;
 	width: 100%;
 }
-.my__img{
+.works__pic{
 	width: 98%;
+	margin: var(--spacing);
+	outline: 1px solid black;
+}
+.works__page{
+	display: none;
+}
+.my__img{
+	width: 100%;
 	height: 400px;
+	display: block;
 	object-fit: cover;
 	cursor: pointer;
 	transition: all .3s ease;
@@ -108,6 +171,10 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 .next{
 	right: 1%;
 }
+.works__add{
+	display: block;
+}
+}
 @keyframes zoom{
 	from{transform: scale(0);}
 	to{transform: scale(1);}
@@ -120,12 +187,12 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 	
 }
 @media only screen and (min-width: 62em) {
-	.my__img{
+	.works__pic{
 		width: calc(96%/2);
 	}
 }
 @media only screen and (min-width: 75em) {
-	.my__img{
+	.works__pic{
 		width: calc(94%/3);
 	}
 }
