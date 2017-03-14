@@ -11,10 +11,14 @@
 	transition: all .2s ease;
 	/*width: 100vw;*/
 }
+.works__pic{
+	width: 100%;
+}
 .my__img{
 	width: 100vw;
+	margin: 0;
 	/*display: inline-block;*/
-	margin: 2% auto;
+	/*margin: 2% auto;*/
 }
 .my__modal, .works__add{
 	display: none;
