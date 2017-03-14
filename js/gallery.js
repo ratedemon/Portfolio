@@ -47,7 +47,6 @@ function toNum(event){
 			counter++;
 		}
 	}
-	// console.log(counter);
 	polosa.style.transform = 'translateX(' + -100*counter +'%)';
 }
 

@@ -3,10 +3,6 @@
 	--main-color: white;
 	--spacing: 1%;
 }
-/**{
-	margin: 0;
-	padding: 0;
-}*/
 @media only screen and (max-width: 48em){
 .works__my_block{
 	width: 100%;
@@ -19,8 +15,7 @@
 	align-items: flex-start;
 	flex-wrap: nowrap;
 	transform: translateX(0%);
-	transition: all .2s ease;
-	/*width: 100vw;*/
+	transition: all .5s ease;
 }
 .works__pic{
 	width: 100%;

@@ -110,7 +110,18 @@ box-shadow: 0px 0.5px 5px 0px rgba(0,0,0,0.75);
 	color: var(--main-color);
 	transition: opacity 0.3s ease;
 }
-
+.label__color{
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	color: var(--main-color);
+}
+.color__change{
+	display: block;
+	padding: 0;
+	margin: 1% auto;
+	background: var(--main-color);
+}
 .jobs{
 	box-sizing: border-box;
 }
@@ -373,10 +384,6 @@ box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
 	.name__span{
 		transition: all 0.2s ease;
 	}
-/*	.name__h1:hover + .name__span{
-		visibility: visible;
-		opacity: 1;
-	}*/
 	.info__p{
 		vertical-align: top;
 		padding: 0.5em;
@@ -441,24 +448,6 @@ box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 	.navbar__li:hover{
 		transform: scale(1.15, 1.15);
 	}
-/*	.name__span{
-	opacity: 0;
-	visibility: hidden;
-	}*/
-/*	.name__h1:hover + .name__span{
-	visibility: visible;
-	opacity: 1;
-	}*/
-/*	.info__img{
-		filter: sepia(100%);
-		cursor: pointer;
-		transition: all 0.2s ease;
-		border-radius: 20%;
-	}
-	.info__img:hover{
-		filter: sepia(0%);
-		border-radius: 0%;
-	}*/
 	.info__img{
 		align-self: stretch;
 		height: 70%;
@@ -466,13 +455,6 @@ box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 		object-position: 0 50%;
 		overflow: hidden;
 	}
-	.data__name_input, .data__mess_input, .data__name, .feedback__data{
-		/*display: inline-block;*/
-	}
-	.data__name{
-
-	}
-	
 	.data__name_input, .data__mess_input{
 		width: 50%;
 		margin: 2%;
@@ -573,8 +555,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4db9b4', end
 	width: 96%;
 }
 }	
-@media screen and (orientation:portrait){
-/*	.header{
-		height: 100vh;
-	}*/
-}

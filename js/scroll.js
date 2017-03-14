@@ -1,4 +1,4 @@
-const colorMain = document.querySelector('.colorChange');
+const colorMain = document.querySelector('.color__change');
 colorMain.addEventListener('change', chooseColor);
 
 function chooseColor() {
