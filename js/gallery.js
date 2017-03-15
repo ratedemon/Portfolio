@@ -134,7 +134,7 @@ function close(){
 };
 function toNext(){
 	q = newArr.indexOf(img);
-	console.log(q);
+	// console.log(q);
 	close();
 	if(q>images.length-2){
 		q=-1;
