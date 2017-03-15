@@ -4,7 +4,7 @@
     const navbar = document.querySelector(".navbar__ul");
     const link = document.querySelectorAll(".navbar__a");
     const toLink = document.querySelectorAll(".to__link");
-    var counter = 0;
+    var counter = 0, timer, scrolled, scrollTop;
     // console.log(toLink.length, link.length);
     if (hamburgers.length > 0) {
       forEach(hamburgers, function(hamburger) {
@@ -18,20 +18,41 @@
    	this.classList.toggle("is-active");
     this.classList.toggle("hamburger-center");
     navbar.classList.toggle("navbar__ul_active");
+    if(this.classList.contains('is-active')){
+    	document.body.style.overflow = 'hidden';
+  	}
+  	else{
+  		document.body.style.overflow = '';
+  	}
    }
 
+
+
   function Scrolling(event){
-  	// console.log(this[data-key]);
   	counter = this.dataset;
-  	console.log(counter.key);
-  	// this.classList.toggle('navbar__a_active');
-  	// for(i=0;i<link.length;i++){
-  	// 	if(link[i].classList.contains('navbar__a_active')){
-  	// 		break;
-  	// 	}
-  	// 	else{
-  	// 		counter++;
-  	// 	}
-  	// }
-  	// console.log(counter);
+  	hamburgers[0].classList.toggle("is-active");
+    hamburgers[0].classList.toggle("hamburger-center");
+    navbar.classList.toggle("navbar__ul_active");
+    document.body.style.overflow = '';
+  	counter = counter.key;
+		// var hei = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  	var themeHeig = toLink[counter];
+  	scrolled=themeHeig.getBoundingClientRect();
+  	scrolled = parseInt(scrolled.top);
+  	window.scrollTo(0, scrolled);
+  	// scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  	// console.log(scrollTop);
+  	// toBlock();
   }
+
+  // function toBlock(){
+  // 	if(scrolled>scrollTop){
+  // 		window.scrollTo(0, scrollTop);
+  // 		scrollTop += 15;
+  // 		timer = setTimeout(toBlock, 10);
+  // 	}
+  // 	else{
+  // 		clearTimeout(timer);
+  // 		window.scrollTo(0, scrolled);
+  // 	}
+  // }

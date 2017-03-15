@@ -60,6 +60,7 @@ body{
 		outline: none;
 	transition: all .3s ease;
 	z-index: 20;
+	/*display: none!important;*/
 }
 .hamburger-center{
 	top: 1%;
