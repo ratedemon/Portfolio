@@ -35,24 +35,7 @@
     navbar.classList.toggle("navbar__ul_active");
     document.body.style.overflow = '';
   	counter = counter.key;
-		// var hei = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
   	var themeHeig = toLink[counter];
-  	scrolled=themeHeig.getBoundingClientRect();
-  	scrolled = parseInt(scrolled.top);
-  	window.scrollTo(0, scrolled);
-  	// scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  	// console.log(scrollTop);
-  	// toBlock();
+  	themeHeig = themeHeig.offsetTop;
+  	window.scrollTo(0, themeHeig);
   }
-
-  // function toBlock(){
-  // 	if(scrolled>scrollTop){
-  // 		window.scrollTo(0, scrollTop);
-  // 		scrollTop += 15;
-  // 		timer = setTimeout(toBlock, 10);
-  // 	}
-  // 	else{
-  // 		clearTimeout(timer);
-  // 		window.scrollTo(0, scrolled);
-  // 	}
-  // }

@@ -18,10 +18,11 @@ mqq.addListener(function(m) {
 function forMobile(){
 const polosa = document.querySelector('.works__my');
 const page = document.querySelector('.works__page');
-const pictures = document.querySelectorAll('.works__pic');
+var pictures = document.querySelectorAll('.works__pic');
 var counter = 0;
+console.log(pictures.length);
 addDott();
-const dott = document.querySelectorAll('.page__span');
+var dott = document.querySelectorAll('.page__span');
 dott[0].classList.add('page__span_active');
 
 function addDott(){
@@ -79,7 +80,7 @@ Hammer(polosa).on("swiperight", function() {
 };
 
 function forDesctop(){
-const images = document.querySelectorAll('.my__img');
+var images = document.querySelectorAll('.my__img');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 var modalWindow = document.getElementById('my__modal');
@@ -87,6 +88,7 @@ var modalImg = document.getElementById('img01');
 var caption =document.getElementById('caption');
 const span = document.getElementById('close');
 var modalBlock = document.getElementById('modal__block');
+const nav = document.querySelector(".navbar");
 // var counter=0;
 var newArr = [];
 
@@ -103,6 +105,7 @@ function openImage(pic){
 	img = pic.src || pic.srcElement.src;
 	alt =pic.alt  || pic.target.alt;	
 	modalWindow.style.display = 'block';
+	nav.style.display = 'none';
 	var mql = window.matchMedia("(orientation: portrait)");
 
 	if(mql.matches) {  
@@ -131,6 +134,7 @@ function closeImage() {
 };
 function close(){
 	modalWindow.style.display ='none';
+	nav.style.display = "flex";
 };
 function toNext(){
 	q = newArr.indexOf(img);

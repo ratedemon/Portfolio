@@ -1,0 +1,60 @@
+{
+	"1" : {
+	"101" : {
+		"imgSrc" : "img/screen/screen0.jpg",
+		"altImg" : "Goods!",
+		"hrefImg": "http://rtdmn.inf.ua/weather/"
+	},
+	"102" : {
+		"imgSrc" : "img/screen/screen1.jpg",
+		"altImg" : "Apple!",
+		"hrefImg": "#"
+	},
+	"103" : {
+		"imgSrc" : "img/screen/screen2.jpg",
+		"altImg" : "Nice!",
+		"hrefImg": "#"
+	},
+	"104" : {
+		"imgSrc" : "img/screen/screen3.jpg",
+		"altImg" : "Blackberry!",
+		"hrefImg": "#"
+	},
+	"105" : {
+		"imgSrc" : "img/screen/screen4.jpg",
+		"altImg" : "Ask!",
+		"hrefImg": "#"
+	},
+	"106" : {
+		"imgSrc" : "img/screen/screen5.jpg",
+		"altImg" : "Samsung!",
+		"hrefImg": "#"
+	}
+	},
+	"2" : {
+	"101" : {
+		"imgSrc" : "img/screen/screen6.jpg",
+		"altImg" : "Goods!"
+	},
+	"102" : {
+		"imgSrc" : "img/screen/screen7.jpg",
+		"altImg" : "Apple!"
+	},
+	"103" : {
+		"imgSrc" : "img/screen/screen8.jpg",
+		"altImg" : "Nice!"
+	},
+	"104" : {
+		"imgSrc" : "img/screen/screen9.jpg",
+		"altImg" : "Blackberry!"
+	},
+	"105" : {
+		"imgSrc" : "img/screen/screen10.jpg",
+		"altImg" : "Ask!"
+	},
+	"106" : {
+		"imgSrc" : "img/screen/screen11.jpg",
+		"altImg" : "Samsung!"
+	}
+	}
+}

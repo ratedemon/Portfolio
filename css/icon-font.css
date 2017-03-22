@@ -30,8 +30,8 @@
 }
 
 .soc li {
-    display:inline-block;
-    *display:inline;
+    /*display:inline-block;*/
+    /**display:inline;*/
     zoom:1;
 }
 
@@ -58,11 +58,11 @@
     transform: translateZ(0);
     
     display: block;
-    margin: 2% auto;
+    margin: 2% 0;
     overflow:hidden;
     text-decoration:none;
     text-align:center;
-    display:block;
+    /*display:block;*/
     position: relative;
     z-index: 1;
     width: 80px;
